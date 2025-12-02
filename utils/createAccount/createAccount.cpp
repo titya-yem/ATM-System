@@ -1,11 +1,12 @@
 #include <iostream>
-#include "createAccount.hpp"
+#include <iomanip>
+#include "saveAccount/saveAccount.hpp"
 using namespace std;
 
 void createAccount()
 {
     cout << "========================================\n";
-    cout << "|    Please create an account with us  |\n";
+    cout << "|       Please create an account       |\n";
     cout << "========================================\n\n";
     cout << "  1) Create Account\n";
     cout << "  2) Exit\n";
@@ -18,7 +19,7 @@ void createAccount()
     switch (createAccOption)
     {
     case 1:
-        cout << "Account created successfully" << endl;
+        saveAccount();
         break;
     case 2:
         cout << "Thank you for visiting Le Fang ATM Service";

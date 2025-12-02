@@ -13,7 +13,13 @@ void LoginUser()
     cin >> pin;
 
     if (pin == "right")
+    {
         cout << "Okay";
+    }
     else
-        cout << "Not Okay";
+    {
+        cout << "password is incorrect\n";
+        cout << " 1) Press 1 to TRY AGAIN\n";
+        cout << " 2) Press 2 to EXIT\n";
+    }
 }
